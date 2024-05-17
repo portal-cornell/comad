@@ -101,4 +101,14 @@ In the notebook, the user can load a matplotlib viz of every episode that can ei
     <td><img src="docs/cabinet_hr_img_slide.gif" alt>
     <em>Image Slideshow</em></td>
 </tr>
+
+### BibTeX
+   ```bash
+   @article{kedia2023interact,
+    title={InteRACT: Transformer Models for Human Intent Prediction Conditioned on Robot Actions},
+    author={Kedia, Kushal and Bhardwaj, Atiksh and Dan, Prithwish and Choudhury, Sanjiban},
+    journal={arXiv preprint arXiv:2311.12943},
+    year={2023}
+  }
+   ``` 
 </table>
