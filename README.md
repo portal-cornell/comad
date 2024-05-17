@@ -101,6 +101,7 @@ In the notebook, the user can load a matplotlib viz of every episode that can ei
     <td><img src="docs/cabinet_hr_img_slide.gif" alt>
     <em>Image Slideshow</em></td>
 </tr>
+</table>
 
 ### BibTeX
    ```bash
@@ -111,4 +112,3 @@ In the notebook, the user can load a matplotlib viz of every episode that can ei
     year={2023}
   }
    ``` 
-</table>
