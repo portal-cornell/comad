@@ -85,7 +85,7 @@ jupyter nbextension enable --py widgetsnbextension
 
 ### Visualization and Features
 
-Play any data episode through Python notebook: scripts/comad_visualization.ipynb.
+Play any data episode through Python notebook: ```scripts/comad_visualization.ipynb```.
 
 In the notebook, the user can load a matplotlib viz of every episode that can either be paired with the corresponding RGB video or a slideshow of images from the RGB video that are aligned by timestep.
 
@@ -102,6 +102,7 @@ In the notebook, the user can load a matplotlib viz of every episode that can ei
 
 ### BibTeX
 If you find the dataset or paper useful for your research, please cite our paper:
+
    ```bash
    @article{kedia2023interact,
     title={InteRACT: Transformer Models for Human Intent Prediction Conditioned on Robot Actions},
