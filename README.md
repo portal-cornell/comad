@@ -9,7 +9,7 @@
 </tr>
 </table>
 
-### Human-Human Interactions
+<!-- ### Human-Human Interactions
 
 <table border="0">
  <tr align="center">
@@ -61,21 +61,18 @@
     <td><img src="docs/cart_hr.gif" alt>
     <em>Cart Pick</em></td>
 </tr>
-</table>
+</table> -->
 
 ### Setup
 
 Please download the remaining components for the dataset from this link: [CoMaD](https://cornell.box.com/s/jb0wau30dqotcjsak78ks64ea1o88yan). This includes the folders for the corresponding videos for the json files in the github repo.
 
-Once downloaded, maintain the below file structure:
+After downloading, maintain the following file structure to facilitate splitting model training into training and validation sets.
 ```
 ├── train
 ├── test
 ```
-This allows for ML model training.
-
 First create a new conda environment with python=3.9 and run the below command
-
 ``` 
 pip install -r requirements.txt 
 ```
@@ -104,6 +101,7 @@ In the notebook, the user can load a matplotlib viz of every episode that can ei
 </table>
 
 ### BibTeX
+If you find the dataset or paper useful for your research, please cite our paper:
    ```bash
    @article{kedia2023interact,
     title={InteRACT: Transformer Models for Human Intent Prediction Conditioned on Robot Actions},
