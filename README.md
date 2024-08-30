@@ -114,13 +114,33 @@ In the notebook, the user can load a matplotlib viz of every episode that can ei
 </table>
 
 ### BibTeX
-If you find the dataset or paper useful for your research, please cite our paper:
+Please consider citing our papers where we develop collaborative robots using the CoMaD dataset:
 
-   ```bash
-   @article{kedia2023interact,
-    title={InteRACT: Transformer Models for Human Intent Prediction Conditioned on Robot Actions},
-    author={Kedia, Kushal and Bhardwaj, Atiksh and Dan, Prithwish and Choudhury, Sanjiban},
-    journal={arXiv preprint arXiv:2311.12943},
-    year={2023}
-  }
-   ``` 
+```bibtex
+@inproceedings{Kedia2023ManiCastCM,
+  title={ManiCast: Collaborative Manipulation with Cost-Aware Human Forecasting},
+  author={K. Kedia and Prithwish Dan and Atiksh Bhardwaj and Sanjiban Choudhury},
+  booktitle={Conference on Robot Learning},
+  year={2023},
+}
+```
+
+```bibtex
+@inproceedings{Kedia2023InteRACTTM,
+  title={InteRACT: Transformer Models for Human Intent Prediction Conditioned on Robot Actions},
+  author={K. Kedia and Atiksh Bhardwaj and Prithwish Dan and Sanjiban Choudhury},
+  journal={2024 IEEE International Conference on Robotics and Automation (ICRA)},
+  year={2024},
+  pages={621-628},
+}
+```
+
+```bibtex
+@article{Wang2024MOSAICAM,
+  title={MOSAIC: A Modular System for Assistive and Interactive Cooking},
+  author={Huaxiaoyue Wang and K. Kedia and Juntao Ren and Rahma Abdullah and Atiksh Bhardwaj and Angela Chao and Kelly Y Chen and Nathaniel Chin and Prithwish Dan and Xinyi Fan and Gonzalo Gonzalez-Pumariega and Aditya Kompella and Maximus Adrian Pace and Yash Sharma and Xiangwan Sun and Neha Sunkara and Sanjiban Choudhury},
+  journal={ArXiv},
+  year={2024},
+  volume={abs/2402.18796},
+}
+```
