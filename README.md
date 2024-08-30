@@ -1,7 +1,20 @@
 
 # Collaborative Manipulation Dataset (CoMaD)
 
- We release a high-quality dataset collected using a motion capture system, consisting of 488 human-human and 304 human-robot episodes of collaboration to perform daily household activities. 
+The CoMaD dataset is a collection of collaborative kitchen activities. We release 5 different long-horizon activities (Reactive Stirring, Cart Place, Table Setting, Cabinet Arrange, and, Object Handovers).
+
+The dataset contains multiple episodes of human-human and human-robot teams performing each activity. There are over 15 unique users across our dataset collaborating with a Franka Emika Research 3 robot arm.
+
+We release a high-quality dataset collected using a motion capture system, consisting of:
+- 488 human-human episodes (~6 hours of motion)
+- 304 human-robot episodes (~1 hour of motion)
+
+Each episode contains the following data:
+- Motion Capture of 24 upper body joints of the human
+- Robot Arm Joint Positions (for Human-Robot teams)
+- Third-person RGB camera view
+
+Motion capture and joint positions are collected at a frequency of 120Hz, while the camera records images at 30Hz.
 
  <table border="0">
  <tr align="center">
