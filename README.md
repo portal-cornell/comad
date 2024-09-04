@@ -3,7 +3,7 @@
 
 The CoMaD dataset is a collection of human-human and human-robot interactions in collaborative kitchen activities. We release 5 different long-horizon activities (Reactive Stirring, Cart Place, Table Setting, Cabinet Arrange, and, Object Handovers).
 
-The dataset contains multiple episodes of human-human and human-robot teams performing each activity. There are over 15 unique users across our dataset collaborating with a Franka Emika Research 3 robot arm.
+The dataset contains multiple episodes of human-human and human-robot teams performing each activity. There are over 14 unique users across our dataset collaborating with a Franka Emika Research 3 robot arm.
 
 We release a high-quality dataset collected using a motion capture system, consisting of:
 - 488 human-human episodes (~6 hours of motion)
