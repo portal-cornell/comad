@@ -101,7 +101,6 @@ def point_array(
     color="black",
 ):
     edges = [(0, 1), (0, 2), (1, 3), (3, 5), (2, 4), (4, 6), (5, 9), (6, 10)]
-    # extra edges to connect the pose back to the hips
     extra_edges = [(1, 7), (7, 8), (8, 2)]
     if current_joints is not None:
         for idx, edge in enumerate(edges + extra_edges):
@@ -157,8 +156,7 @@ def point_array(
 
 
 def robot_array(joints, figures, ax, timestep):
-    # edges = [(0, 1), (1, 2), (2, 3), (3, 4), (5, 6), (6, 7), (7, 8), (7, 9)]
-    edges = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7)]
+    edges = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 11)]
     robo_joints = joints[timestep]
     for idx, edge in enumerate(edges):
         if edge[1] == 8 or edge[1] == 9:
@@ -315,15 +313,12 @@ def load_data(pwd_path, train_test, dataset, task, episode, img_slide, snapshot)
 
     person_data = {}
     total_time = len(data[list(data.keys())[0]])
-    # for stream_person in data:
-    #     person_data[stream_person] = np.array(data[stream_person])
     for person, joint_data in data.items():
         person_data[person] = []
         for timestep_index, timestep in enumerate(joint_data):
             new_timestep = []
             for joint_index, joint_pos in enumerate(timestep):
                 if all(coord == 0 for coord in joint_pos):
-                    # Replace zeroed joint position with a nearby non-zero joint position
                     nearby_timesteps = [
                         joint_data[i]
                         for i in range(
