@@ -1,20 +1,20 @@
 
 # Collaborative Manipulation Dataset (CoMaD)
 
-The CoMaD dataset is a collection of human-human and human-robot interactions in collaborative kitchen activities. We release 5 different long-horizon activities (Reactive Stirring, Cart Place, Table Setting, Cabinet Arrange, and, Object Handovers).
+The CoMaD dataset captures human-human and human-robot interactions in collaborative kitchen tasks. It includes five long-horizon activities: Reactive Stirring, Cart Place, Table Setting, Cabinet Arrange, and Object Handovers.
 
-The dataset contains multiple episodes of human-human and human-robot teams performing each activity. There are over 14 unique users across our dataset collaborating with a Franka Emika Research 3 robot arm.
+The dataset features 14+ unique users working with a Franka Emika Research 3 robot arm across:
 
-We release a high-quality dataset collected using a motion capture system, consisting of:
-- 488 human-human episodes (~6 hours of motion)
-- 304 human-robot episodes (~1 hour of motion)
+    488 human-human episodes (~6 hours of motion)
+    304 human-robot episodes (~1 hour of motion)
 
-Each episode contains the following data:
-- Motion Capture of 24 upper body joints of the human
-- Robot Arm Joint Positions (for Human-Robot teams)
-- Third-person RGB camera view
+Each episode includes:
 
-Motion capture and joint positions are collected at a frequency of 120Hz, while the camera records images at 30Hz.
+    24 upper-body human motion capture points
+    Robot arm joint positions (for human-robot teams)
+    Third-person RGB camera footage
+
+Motion data is recorded at 120Hz, and video at 30Hz.
 
  <table border="0">
  <tr align="center">
@@ -78,35 +78,32 @@ Motion capture and joint positions are collected at a frequency of 120Hz, while 
 
 ### Setup
 
-Please download the remaining components for the dataset from this link: [CoMaD](https://cornell.box.com/s/jb0wau30dqotcjsak78ks64ea1o88yan). This includes the folders for the corresponding videos for the json files in the github repo.
+Download the data from this link [Data](https://cornell.app.box.com/s/jb0wau30dqotcjsak78ks64ea1o88yan) into the correct data directory.
 
-After downloading, maintain the following file structure to facilitate splitting model training into training and validation sets.
+You can download the .zip file and extract the data using the following terminal commands:
 ```
-├── train
-├── test
+wget https://cornell.box.com/shared/static/6ss0mfojdof8q1z9ru7go58rwxqbnel5.zip -O comad_data.zip
+unzip comad_data.zip -d .
+rm comad_data.zip
 ```
-First create a new conda environment with python=3.9 and run the below command
-``` 
-pip install -r requirements.txt 
-```
+Follow these steps to install `CoMaD`:
 
-Then activate ipywidgets
-
-``` 
-jupyter nbextension enable --py widgetsnbextension 
-```
+1. Create and activate the conda environment:
+   ```bash
+   cd interact
+   conda create --name comad python=3.9
+   conda activate comad
+   pip install -r requirements.txt
+   jupyter nbextension enable --py widgetsnbextension 
+   ```
 
 ### Visualization and Features
 
 Play any data episode through Python notebook: ```scripts/comad_visualization.ipynb```.
 
-In the notebook, the user can load a matplotlib viz of every episode that can either be paired with the corresponding RGB video or a slideshow of images from the RGB video that are aligned by timestep.
+In the notebook, the user can load a matplotlib viz of every episode that can either be paired with the corresponding slideshow of images from the RGB video that are aligned by timestep.
 
 <table border="0">
- <tr align="center">
-    <td><img src="docs/cabinet_hr_vid.gif" alt>
-    <em>RGB Video</em></td>
-</tr>
     <tr align="center">
     <td><img src="docs/cabinet_hr_img_slide.gif" alt>
     <em>Image Slideshow</em></td>
