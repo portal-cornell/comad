@@ -89,7 +89,6 @@ rm comad_data.zip
 
 Create and activate the conda environment:
 ```bash
-cd interact
 conda create --name comad python=3.9
 conda activate comad
 pip install -r requirements.txt
