@@ -78,24 +78,23 @@ Motion data is recorded at 120Hz, and video at 30Hz.
 
 ### Setup
 
-Download the data from this link [Data](https://cornell.app.box.com/s/jb0wau30dqotcjsak78ks64ea1o88yan) into the correct data directory.
+Download the data from this [link](https://cornell.app.box.com/s/jb0wau30dqotcjsak78ks64ea1o88yan) with the train and test folders at the top level.
 
-You can download the .zip file and extract the data using the following terminal commands:
+You can also download the .zip file and extract the data using the following terminal commands:
 ```
 wget https://cornell.box.com/shared/static/6ss0mfojdof8q1z9ru7go58rwxqbnel5.zip -O comad_data.zip
 unzip comad_data.zip -d .
 rm comad_data.zip
 ```
-Follow these steps to install `CoMaD`:
 
-1. Create and activate the conda environment:
-   ```bash
-   cd interact
-   conda create --name comad python=3.9
-   conda activate comad
-   pip install -r requirements.txt
-   jupyter nbextension enable --py widgetsnbextension 
-   ```
+Create and activate the conda environment:
+```bash
+cd interact
+conda create --name comad python=3.9
+conda activate comad
+pip install -r requirements.txt
+jupyter nbextension enable --py widgetsnbextension 
+```
 
 ### Visualization and Features
 
